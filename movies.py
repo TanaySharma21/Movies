@@ -18,6 +18,8 @@ def create_movies(conn, movies):
     conn.execute("INSERT INTO MOVIES (Name,Actor,Actress,Director, Year_of_Release) \
       VALUES ('Pirates of the Caribbean', 'Johnny Deep', 'Penelope Cruz', 'Lucy Bevan', '2011')");
     
+    conn.execute("INSERT INTO MOVIES (Name,Actor,Actress,Director, Year_of_Release) \
+      VALUES ('Shutter Island', 'Leonardo DiCaprio', 'Patricia Clarkson', 'Martin Scorsese', '2010')");
 
     conn.commit()
     
